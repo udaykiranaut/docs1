@@ -1,0 +1,34 @@
+//input[@name='log']
+
+//input[@id='user_login']
+//input[@class='input']
+//input[@class='input' and @type='password'] 
+//input[@value='Log In']
+//input[@type='checkbox']
+//a[@title='WordPress.org']
+//input[@class='input'][@name='log'] ----2 attributes
+//input[@class='input' or @name='pwd'] ----or 
+//input[@class='input' and @name='log'] ---and
+
+//a[contains(@href,'edit.php')][text()='posts']
+
+.//*[@id='content-label']/label/following::textarea
+
+//[text()='Discussion']//following:://a[contains(@href,'edit.php')][text()='posts']
+//a[contains(text0,'Dismiss this message')]
+//*[contains(@id,'edit')]
+//*[text()='Howdy,admin']
+//a[text()='please update now']
+
+--------------
+Basic syntax
+-----------------------
+
+Using And , Or
+Contains()
+Start-with()
+Text
+Following
+Preceding
+Ansestor
+Absolute Vs Relative path

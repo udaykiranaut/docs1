@@ -1,0 +1,19 @@
+//*input[@id='txtUsername']
+//input[@id='txtUsername']
+//input[@id='txtUsername']|//input[@text='txtUsername']
+//input[@id='txtPassword']|//input[@text='txtPassword']
+//input[@id='txtPassword']
+//input[@type='submit']|//input[@name='submit']
+//input[@type='button']|//input[@id=''openIdLogin]
+//input[@name='openIdLogin']
+//*[text()=' Click this link to start new Tab ']
+//*[text()=' Click this link to start new Tab '][1]
+//*[text()=' Click this link to start new Tab '][2]
+//*[text()=' Click this link to start new Tab '][3]
+
+//p[text()='WebDriver']
+
+driver.findElement(By.xpath("//p[text()='WebDriver']"));
+
+//div[@class='dropdown-content']//a
+//div[@class='dropdown-content']//a[text()='Selenium']

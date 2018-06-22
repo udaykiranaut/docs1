@@ -1,0 +1,141 @@
+action class
+Actions act1 = new Actions(driver);
+act1.dragAndDropBy(draggable, 100, 100).build().perform();
+driver.switchTo().defaultContent();
+driver.switchTo().frame(0);
+act1.dragAndDrop(source, target).build().perform();
+------------------------------------------
+loding drivers
+
+Chrome
+System.setProperty("webdriver.chrome.driver","E:\\01 for testing\\selenium web drivers\\chromedriver.exe");
+
+WebDriver driver = new ChromeDriver();
+--------------------------------------------
+FireFox
+
+System.setProperty("webdriver.gecko.driver","E:\\01 for testing\\web drivers\\geckodriver\\geckodriver10.exe");
+
+WebDriver driver = new 	FirefoxDriver();
+---------------------------------------------
+IE
+System.setProperty("webdriver.ie.driver","E:\\01 for testing\\selenium web drivers\\IEDriverServer.exe");
+
+WebDriver driver = new InternetExplorerDriver();
+
+-------------------------------------------------
+driver-----lines
+
+maximizing the window
+
+driver.manage().window().maximize();
+driver.manage().deleteAllCookies();
+driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+ToGet title of the page
+
+String s1 = driver.getTitle();
+----------------------------------------------
+Wait
+
+Implicit wait
+
+driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
+ExplicitWait
+
+WebDriverWait wait = new WebDriverWait(driver, 5);
+WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='WebDriver']")));
+
+------------------------------------------------------------
+
+JavascriptExecutor
+
+
+((JavascriptExecutor)driver).executeScript("scroll(0,600)");
+-----------------------
+JavascriptExecutor je = (JavascriptExecutor)driver;
+je.executeScript("arguments[0].scrollIntoView(true);",element);
+----------------------------------------------------------------
+Log4j code line 
+
+Logger log1 = Logger.getLogger("LogDemo1");
+PropertyConfigurator.configure("log4j.properties");
+log1.info("driver set");
+
+
+
+
+
+--------------------------------------------------------
+get element by location
+
+//driver.findElement(By.id("male")).click();
+		int x = driver.findElement(By.id("male")).getLocation().getX();
+		int y = driver.findElement(By.id("male")).getLocation().getY();
+--------------------------------------------------------------
+
+
+TestNG
+---------------
+
+TestNG listiner
+----------------
+@Test(dependsOnMethods="login")----------------single dependency
+@Test(dependsOnMethods="{login,startApp}")-------multiple dependency
+
+@Test(priority=3) ------priority
+@Test(priority=-3-------negative piority
+@Test(priority=1,description= "This test case will verify the user")----priority abd description
+----------------------
+Before Class
+------
+@BeforeClass
+	public void startBrowser() 
+	{
+		System.setProperty("webdriver.chrome.driver","E:\\01 for testing\\selenium web drivers\\chromedriver.exe"); 
+		driver=new ChromeDriver();
+		System.out.println("----------starts the browser");
+		
+	}
+
+After class
+----------------
+@AfterClass
+	public void quitBowser() {
+		driver.quit();
+		System.out.println("----------browser quits");
+		
+	}
+-------------------------------
+
+@BeforeMethod
+@AfterMethod
+Reporter.log("---Browser closed---", true);
+
+---------------------
+
+
+Assert
+
+HardAssert
+
+Assert.assertTrue(str.contains("uday"));
+
+
+Assert.assertEquals(11, 11);
+Assert.assertEquals(12, 13,"count deosnt match")
+
+SoftAssert
+oftAssert  sf1 = new SoftAssert();
+sf1.assertEquals(12, 14,"both are not equal");
+sf1.assertAll();
+
+
+
+
+
+
+

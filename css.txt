@@ -1,0 +1,40 @@
+input[id='username']
+input[class='form-control'][name='password']
+
+input#username ----# is id
+input#password
+
+input#rememberme
+-------------------------------
+for class
+
+input.form-control  (. is for class)
+
+button.btn
+------------------------
+for contains(id*,name*)
+input[id*='user']-----for contains
+input[id*='remem']
+
+input[name*='user']
+input[name*='pass']
+------------------------------------------
+starts with(id^)
+
+input[id^='user']
+input[id^='pass']
+input[name^='search']
+input[class^='form'][id^='user']
+input[class^='searc'][value^='I']
+
+-------------------------------------
+ends with(type$)
+
+input[type$='submit']
+input[type$='mit']
+input[name$='word']
+button[type$='submit']
+button[type$='submit']
+a[role$='button']
+
+

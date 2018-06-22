@@ -1,0 +1,4 @@
+Zooming seeting
+protected mode setting
+Xpath changes in IE browser
+sendKeys performance

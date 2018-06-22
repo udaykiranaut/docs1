@@ -1,0 +1,5 @@
+firepath
+firebug
+MRI-write and validate xpath, we can get developer options
+
+link to ---------http://westciv.com/mri/

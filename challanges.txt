@@ -1,0 +1,18 @@
+challanges
+writing dynamic Xpath -- using custom xpath
+hidden webelement
+hadling dynamic ids
+generic xpath
+same id or
+same xpath matching with multilple nodes
+using find elements we found , getLocation().getX()
+finding the total number of links
+
+whitescreen/whitepage------we cannot use page titile for verification
+
+---------
+not connected exception -- comes only for firefox not for IE or Chrome
+By.tagName()
+
+------------------smoke testing--------comprehensive testing--------------------
+end to end testing

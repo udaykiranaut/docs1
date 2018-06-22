@@ -1,0 +1,45 @@
+for inputs
+---------------------
+//input[@class='-----']	
+//input[@name='_nkw']
+//input[@type='text']
+//input[contains(@class,'-------')]
+//input[contains(@class,'gh-tb ui-autocomplete-input')]
+//input[@id='gh-ac']
+----------------------------
+//input[contains(@id,'gh-ac')]
+//input[starts-with(@id,'gh-ac')]
+//input[ends-with(@id,'gh-ac')]
+//input[ends-with(@class,'input')]
+---------------------------------
+with input -- -- class,name,type,contains,starts-with,ends-with
+-------------------------------------------------------------
+for links
+-------------
+all links are represented by <a> tag
+//a[contains(text(),'---')]-------------text()
+//a[contains(text(),'Sign in')]
+//a[text()='Features']
+//a[contains(text(),Faetures)]
+//a[contains(text(),'Features')]
+//a[contains(text(),'Sign Up')]
+//a[contains(text(),'Add Boxes')]
+----------------------------
+and operator
+//input[@type='submit' and @value='Login']   ----using (and)
+//button[@type='button' and @class='btn']
+//a[text()='360 Vacations 700010']
+
+
+select
+//select[@class='select']//option[contains(text(),'Web')]
+//button[@id='dropdownMenuButton']
+-------------------------------------------------------------
+parent ---- child
+------------------------------------------------------------
+//a[text()='360 Vacations 700010']//parent::td[@class='evenListRowS1']//preceding-sibling::td[@class='evenListRowS1']//input
+
+//a[text()='Air Geese 135866']//parent::td[@class='evenListRowS1']//preceding-sibling::td[@class='evenListRowS1']//input
+
+//a[text()='Air Geese 135866']//parent::td//preceding-sibling::td//input
+//a[text()='2 Tall Stores 965219']//parent::td//preceding-sibling::td//input[@name='mass[]']

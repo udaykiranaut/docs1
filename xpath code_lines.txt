@@ -1,0 +1,7 @@
+	//driver.findElement(By.xpath("//input[@class='gh-tb ui-autocomplete-input']")).sendKeys("java");
+	//driver.findElement(By.xpath("//input[@name='_nkw']")).sendKeys("java");
+	//driver.findElement(By.xpath("//input[@type='text']")).sendKeys("java");
+	//driver.findElement(By.xpath("//input[contains(@class,'gh-tb ui-autocomplete-input')]")).sendKeys("java");
+	//driver.findElement(By.xpath("//input[contains(@id,'gh-ac')]")).sendKeys("chrome");
+	// driver.findElement(By.xpath("//input[starts-with(@id,'gh-ac')]")).sendKeys("fox");
+	driver.findElement(By.xpath("//a[contains(text(),'Sign in')]")).click();
